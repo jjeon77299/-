@@ -35,10 +35,3 @@ insert into MONEY_TBL values(100004,20160007,500,2,1000,'A001','20160104');
 insert into MONEY_TBL values(100004,20160008,300,1,300,'A005','20160104');
 insert into MONEY_TBL values(100004,20160009,600,1,600,'A006','20160104');
 insert into MONEY_TBL values(100004,20160010,3000,1,3000,'A007','20160106');
-
-select max(custno) from MEMBER_TBL;
-
-drop table MEMBER_TBL;
-drop table MONEY_TBL;
-
-select * from MEMBER_TBL;
