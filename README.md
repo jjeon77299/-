@@ -16,8 +16,7 @@
 
 <h2>DBConnect</h2>
 
-![image](https://user-images.githubusercontent.com/97486359/186097201-40a1da4c-bb7b-47f2-9fd1-7b0964b488d5.png)
-
+![image](https://user-images.githubusercontent.com/97486359/186323140-2880a64b-117c-4ff1-870e-4e8cef5e50e4.png)
 
 <h2>DB</h2>
 
@@ -25,13 +24,16 @@
 
 <h2>join</h2>
 
-![image](https://user-images.githubusercontent.com/97486359/186095733-ca531543-8f9f-45b7-8105-7b19bf9e3d52.png)
-![image](https://user-images.githubusercontent.com/97486359/186095815-4863144f-a73c-47d1-b088-4bdd7d0c5563.png)
-![image](https://user-images.githubusercontent.com/97486359/186095861-8c0c1b0c-c463-49cb-9d60-99f2bdc869ee.png)
-![image](https://user-images.githubusercontent.com/97486359/186096035-b269452a-8df6-46fd-a539-74bc940a241e.png)
-form태그 안에 table태그을 넣고 각각의 행에 input을 text형식으로 넣는다. <br>
-하지만 마지막 행에는 submit, button으로 이루어저있다.
+![image](https://user-images.githubusercontent.com/97486359/186322930-50f7848c-3b29-4d7c-a9ef-98a0a00596db.png)<br><br>
 
+
+
+![image](https://user-images.githubusercontent.com/97486359/186095733-ca531543-8f9f-45b7-8105-7b19bf9e3d52.png)<br>
+![image](https://user-images.githubusercontent.com/97486359/186095815-4863144f-a73c-47d1-b088-4bdd7d0c5563.png)<br>
+![image](https://user-images.githubusercontent.com/97486359/186095861-8c0c1b0c-c463-49cb-9d60-99f2bdc869ee.png)<br>
+![image](https://user-images.githubusercontent.com/97486359/186096035-b269452a-8df6-46fd-a539-74bc940a241e.png)<br>
+
+만약 작성을 다하고 등록버튼을 누르면 join_p 창으로 이동하고, 다 처리하면 index창으로 이동한다.  
 <h2>join_p</h2>
 
 ![image](https://user-images.githubusercontent.com/97486359/186097027-1e58c516-d50e-4337-88a4-bb7d7ae3be97.png)
