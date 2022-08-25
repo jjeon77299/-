@@ -38,11 +38,15 @@
 
 ![image](https://user-images.githubusercontent.com/97486359/186588018-ed04f780-67aa-440b-8ee0-98b2a4f0f4e4.png)<br>
 <h2>테이블 값 변화</h2>
+
 ![image](https://user-images.githubusercontent.com/97486359/186097927-9fdc4f59-526c-4af9-8058-1ccfa01d6d2b.png)<br>
 추가전<br>
+
 ![image](https://user-images.githubusercontent.com/97486359/186098342-d1b56211-1eb3-4ba0-8e59-a146351a084b.png)<br>
 추가하는 과정<br>
+
 ![image](https://user-images.githubusercontent.com/97486359/186098133-2fb85a70-452a-44d3-9ee4-ffd2ffab5d4a.png)<br>
+
 추가후<br>
 
 사진과 같이 custno가 100007인 홍길동이 추가되었습니다.<br>
