@@ -62,4 +62,4 @@ Connection을 이용해 DB와 연결 후 PreparedStatement와 ResultSet을 통�
 
 테이블을 만들고 그 안에 1번째 줄을 th로 만든 후,<br>
 그 아래 whlie(rs.next())을 이용해 테이블의 마지막 줄까지 getSring으로 조회된 데이터을 화면에 표시합니다, <br>
-또한 custno은 오라클 에서는 number지만 볼려올떼 문자열이되기 때문에 getString을 사용합니다.
+또한 custno은 오라클 에서는 number지만 rs에서 불려올떼 문자열이되기 때문에 getString을 사용합니다.
