@@ -51,9 +51,11 @@
 
 ![image](https://user-images.githubusercontent.com/97486359/186558818-65f22c26-5108-4e93-8397-ff66a0292c39.png)
 
-sql 변수에 member_tbl를 조회할 수 있는 select 문을 사용하고, Connection을 이용해 DB와 연결 후 PreparedStatement와 ResultSet을 통해 sql의 결과를 rs에 저장한다.
+sql 변수에 member_tbl를 조회할 수 있는 select 문을 사용하고(to_char을 사용해 20220825을 2022-08-25형으로 변경),<br>
+Connection을 이용해 DB와 연결 후 PreparedStatement와 ResultSet을 통해 sql의 결과를 rs에 저장한다.
 
 ![image](https://user-images.githubusercontent.com/97486359/186559482-7e29851d-8367-47f0-9bce-beb7c497da13.png)
 
-테이블을 만들고 그 안에 1번째 줄을 th로 만든 후, 그 아래 whlie(rs.next())을 이용해 테이블의 마지막 줄까지 getSring으로 조회된 데이터을 화면에 표시한다, <br>
+테이블을 만들고 그 안에 1번째 줄을 th로 만든 후,<br>
+그 아래 whlie(rs.next())을 이용해 테이블의 마지막 줄까지 getSring으로 조회된 데이터을 화면에 표시한다, <br>
 또한 custno은 number 형식이지만 볼려올떼 문자열이되기 때문에 getString을 사용한다.
