@@ -1,0 +1,69 @@
+<%@ page import="DB.DBConnect"%> <%-- DB파일 안에 DBConnect을 가지고온다--%>
+<%@ page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String sql = "select custno, custname,  phone, address, "
+				+"to_char(joindate,'yyyy-mm-dd') joindate, "
+				+"case when grade = 'A' then 'VIP' when grade = 'B' then '일반' else '직원' end grade, "
+				+"city from member_tbl order by custno asc";
+	Connection conn = DBConnect.getConnection(); 
+	//DBConnect파일 안에 getConnection메소드를 Connection형식의 conn변수에 넣는다.
+	PreparedStatement pstmt = conn.prepareStatement(sql); 
+	//PreparedStatement형 변수 pstmt을 이용해 conn 변수를 sql 변수를 구문을 jQuery로 변환하는 역할을 한다.
+	ResultSet rs = pstmt.executeQuery(); //ResultSet형식 변수 rs에 pstmt을 저장시킨다.
+	
+	
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header id="header">
+	<jsp:include page="layout/header.jsp"></jsp:include>
+</header>
+<nav id="nav">
+	<jsp:include page="layout/nav.jsp"></jsp:include>
+</nav>
+<section class="section">
+	<h2>홈쇼핑 회원 명단</h2><br>
+	<table class="table_line">
+		<tr>
+			<th>회원번호</th>
+			<th>회원성명</th>
+			<th>전화번호</th>
+			<th>주소</th>
+			<th>가입일자</th>
+			<th>고객등급</th>
+			<th>거주지역</th>
+		</tr>
+		<%
+			while(rs.next()){
+		%>
+		<tr class="center">
+			<td><%= rs.getString("custno")%></td>
+			<td><%= rs.getString("custname")%></td>
+			<td><%= rs.getString("phone")%></td>
+			<td><%= rs.getString("address")%></td>
+			<td><%= rs.getString("joindate")%></td>
+			<td><%= rs.getString("grade")%></td>
+			<td><%= rs.getString("city")%></td>
+			<td>
+				<input type="button" value="수정">
+				<input type="button" value="삭제">
+			</td>
+		</tr>
+		<%
+			}
+		%>
+	</table>
+</section>
+<footer id="footer">
+	HRDKOREA Copyrightⓒ2015 All rights reserved. Human Resources Development Service of Korea
+</footer>
+</body>
+</html>
