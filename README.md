@@ -28,7 +28,7 @@
 
 
 
-![image](https://user-images.githubusercontent.com/97486359/186558512-b282ebdf-8f6d-4945-98a2-f052f5af5aa7.png)<br>
+![image](https://user-images.githubusercontent.com/97486359/186579095-f7d6809f-3423-47cc-87d3-1ecfb871dcd8.png)<br>
 ![image](https://user-images.githubusercontent.com/97486359/186095815-4863144f-a73c-47d1-b088-4bdd7d0c5563.png)<br>
 ![image](https://user-images.githubusercontent.com/97486359/186095861-8c0c1b0c-c463-49cb-9d60-99f2bdc869ee.png)<br>
 ![image](https://user-images.githubusercontent.com/97486359/186096035-b269452a-8df6-46fd-a539-74bc940a241e.png)<br>
@@ -36,7 +36,7 @@
 만약 작성을 다하고 등록버튼을 누르면 join_p 창으로 이동하고, 다 처리하면 index창으로 이동한다.  
 <h2>join_p</h2>
 
-![image](https://user-images.githubusercontent.com/97486359/186558581-14be23df-e75a-4c54-b50b-7070a75a8e74.png)
+![image](https://user-images.githubusercontent.com/97486359/186579145-ee894a88-3701-4f5f-b0d6-e7b56b11c2a6.png)<br
 <h2>테이블 값 변화</h2>
 ![image](https://user-images.githubusercontent.com/97486359/186097927-9fdc4f59-526c-4af9-8058-1ccfa01d6d2b.png)<br>
 추가전<br>
@@ -55,4 +55,5 @@ sql 변수에 member_tbl를 조회할 수 있는 select 문을 사용하고, Con
 
 ![image](https://user-images.githubusercontent.com/97486359/186559482-7e29851d-8367-47f0-9bce-beb7c497da13.png)
 
-테이블을 만들고 그 안에 th로 제목을 만들고, 그 아래 whlie(rs.next())을 이용해 member_tbl의 끝 번호까지 member_tbl의 정보를 넣는 것을 반복한다.
+테이블을 만들고 그 안에 1번째 줄을 th로 만든 후, 그 아래 whlie(rs.next())을 이용해 테이블의 마지막 줄까지 getSring으로 조회된 데이터을 화면에 표시한다, <br>
+또한 custno은 number 형식이지만 볼려올떼 문자열이되기 때문에 getString을 사용한다.
