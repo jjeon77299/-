@@ -33,7 +33,7 @@
 ![image](https://user-images.githubusercontent.com/97486359/186587415-f430c2bd-f59b-4cd1-9ef2-52728ef5505d.png)<br>
 ![image](https://user-images.githubusercontent.com/97486359/186096035-b269452a-8df6-46fd-a539-74bc940a241e.png)<br>
 
-만약 작성을 다하고 등록버튼을 누르면 join_p 창으로 이동하고, 다 처리하면 index창으로 이동합니다.  
+만약 작성을 다하고 등록버튼을 누르면 join_p 창으로 이동하고, 100007번에 값이 추가가 되니다. 다 처리하면 index창으로 이동합니다.  
 <h2>join_p</h2>
 
 ![image](https://user-images.githubusercontent.com/97486359/186588018-ed04f780-67aa-440b-8ee0-98b2a4f0f4e4.png)<br>
@@ -61,5 +61,24 @@ Connection을 이용해 DB와 연결 후 PreparedStatement와 ResultSet을 통�
 ![image](https://user-images.githubusercontent.com/97486359/186559482-7e29851d-8367-47f0-9bce-beb7c497da13.png)
 
 테이블을 만들고 그 안에 1번째 줄을 th로 만든 후,<br>
-그 아래 whlie(rs.next())을 이용해 테이블의 마지막 줄까지 getSring으로 조회된 데이터을 화면에 표시합니다, <br>
+그 아래 whlie(rs.next())을 이용해 custno의 마지막 번호까지 getSring으로 조회된 데이터을 화면에 표시합니다, <br>
 또한 custno은 오라클 에서는 number지만 rs에서 불려올떼 문자열이되기 때문에 getString을 사용합니다.
+
+<h2>member_search</h2>
+
+![image](https://user-images.githubusercontent.com/97486359/195013323-c6b6169e-a708-4c03-b340-49e429354556.png)<br>
+![image](https://user-images.githubusercontent.com/97486359/195011471-94af70fa-efbf-473a-b261-5c2b97d32f3b.png)<br>
+![image](https://user-images.githubusercontent.com/97486359/195011666-6748c36a-f9ae-4910-9595-816f9e230563.png)<br>
+<h3>member_search_list</h3>
+![image](https://user-images.githubusercontent.com/97486359/195013095-50f21b85-93da-44e9-917e-16e55935985e.png)<br>
+![image](https://user-images.githubusercontent.com/97486359/195013249-e63c327b-28b5-48aa-9e84-1611712022c7.png)<br>
+
+member_search에서 회원번호을 입력하면 member_search_list에서 같은 회원번호을 가진 회원정보를 출력하는 페이지입니다.
+
+검색한 회원번호가 있을경우
+![image](https://user-images.githubusercontent.com/97486359/195017590-b950e9d0-cda7-4b11-b43e-f041b9c482cf.png)<br>
+검색한 회원번호가 없을경우
+![image](https://user-images.githubusercontent.com/97486359/195017751-dc1adbf2-10ac-449d-8672-c15a7461e075.png)<br>
+
+<h2>sales_list</h2>
+
